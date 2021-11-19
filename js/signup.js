@@ -8,7 +8,6 @@ const fForm = document.getElementById("signup-form");
 const fEmail = document.getElementById("signup-email");
 const fPassword = document.getElementById("signup-password");
 
-
 fForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
