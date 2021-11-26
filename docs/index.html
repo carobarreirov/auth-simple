@@ -8,6 +8,36 @@
     <title> Authentication Project</title>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Auth Example</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#signup-form">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#signin-form">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#signout-form">Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- SIGN UP FORM -->
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="card border-dark ">
@@ -56,27 +86,25 @@
             <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     </div>
-
-
         
-        <!-- SIGN IN FORM -->
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="card border-dark ">
-                    <div class="card-header">Sign Out</div>
-                    <form id="signout-form" class="card-body">
-                        <div class="form-group">
-                            <button id="signout" type="submit" class="btn btn-primary">Sign Out</button>
-                        </div>
-                    </form>
+    <!-- SIGN IN FORM -->
+    <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="card border-dark ">
+                        <div class="card-header">Sign Out</div>
+                        <form id="signout-form" class="card-body">
+                            <div class="form-group">
+                                <button id="signout" type="submit" class="btn btn-primary">Sign Out</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+    </div>
 
-    <script type="module" src="/js/index.js"> </script>
-    <script type="module" src="/js/signup.js"> </script>
-    <script type="module" src="/js/signin.js"> </script>
-    <script type="module" src="/js/signout.js"> </script>
-    <script type="module" src="/js/statech.js"> </script>
+    <script type="module" src="/docs/js/index.js"> </script>
+    <script type="module" src="/docs/js/signup.js"> </script>
+    <script type="module" src="/docs/js/signin.js"> </script>
+    <script type="module" src="/docs/js/signout.js"> </script>
+    <script type="module" src="/docs/js/statech.js"> </script>
 </body>
 </html>
