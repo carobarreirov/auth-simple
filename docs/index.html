@@ -4,32 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css">
     <title> Authentication Project</title>
 </head>
 <body>
-    <div>
-        <form id="signup-form">
-            <input id="signup-email" type="email" placeholder="email">
-            <input id="signup-password" type="password" placeholder="password">
-            <br><br>
-            <button id="signup" type="submit">Sign Up</button>
-        </form>
-    </div>
-    
-    <div>
-        <form id="signin-form">
-            <input id="signin-email" type="email" placeholder="email">
-            <input id="signin-password" type="password" placeholder="password">
-            <br><br>
-            <button id="signin" type="submit">Sign In</button>
-        </form> 
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card border-dark ">
+                <div class="card-header">Sign Up</div>
+                <form id="signup-form" class="card-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                        <input id="signup-email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            
+                        <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                        <input id="signup-password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            
+                        <button id="signup" type="submit" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row progress">
+            <br><br class="m-4">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
 
-    <div>
-        <form id="signout-form">
-            <button id="signout" type="submit">Sign Out</button>
-        </form> 
+    <!-- SIGN IN FORM -->
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card border-dark ">
+                <div class="card-header">Sign In</div>
+                <form id="signin-form" class="card-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                        <input id="signin-email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            
+                        <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                        <input id="signin-password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            
+                        <button id="signin" type="submit" class="btn btn-primary">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row progress">
+            <br><br class="m-4">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
+
+
+        
+        <!-- SIGN IN FORM -->
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="card border-dark ">
+                    <div class="card-header">Sign Out</div>
+                    <form id="signout-form" class="card-body">
+                        <div class="form-group">
+                            <button id="signout" type="submit" class="btn btn-primary">Sign Out</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     <script type="module" src="/js/index.js"> </script>
     <script type="module" src="/js/signup.js"> </script>
